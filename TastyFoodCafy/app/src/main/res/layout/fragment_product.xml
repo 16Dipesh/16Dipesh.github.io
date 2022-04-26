@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="mra.com.tastyfoodcafe.Fragments.ProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/TExt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:fontFamily="cursive"
+                    android:padding="5dp"
+                    android:text="Cakes"/>
+                <View
+                    android:id="@+id/v"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/creamyoranger"
+                    android:layout_below="@id/TExt"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler1"
+                    android:layout_below="@+id/v"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pestry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pastery"
+                    android:padding="5dp"
+                    android:fontFamily="cursive"
+                    android:textSize="25dp"/>
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/creamyoranger"
+                    android:layout_below="@id/pestry"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler2"
+                    android:layout_below="@+id/pestry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel2"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pestry1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CupCakes"
+                    android:padding="5dp"
+                    android:fontFamily="cursive"
+                    android:textSize="25dp"/>
+                <View
+                    android:id="@+id/v11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/creamyoranger"
+                    android:layout_below="@id/pestry1"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pestry1"
+                    android:orientation="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/re14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel3"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/cupcake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DryCakes"
+                    android:padding="5dp"
+                    android:fontFamily="cursive"
+                    android:textSize="25dp"/>
+                <View
+                    android:id="@+id/v111"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/creamyoranger"
+                    android:layout_below="@id/cupcake"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler4"
+                    android:layout_below="@+id/cupcake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re14"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/drycake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cookies"
+                    android:padding="5dp"
+                    android:fontFamily="cursive"
+                    android:textSize="25dp"/>
+                <View
+                    android:id="@+id/v1111"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/creamyoranger"
+                    android:layout_below="@id/drycake"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycler5"
+                    android:layout_below="@+id/drycake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

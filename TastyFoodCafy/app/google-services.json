@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416489547534",
+    "project_id": "tastyfoodcafy",
+    "storage_bucket": "tastyfoodcafy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416489547534:android:49f0acb68e6b0f62db995f",
+        "android_client_info": {
+          "package_name": "mra.com.tastyfoodcafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416489547534-je94kj1so126lhmat062fgke3skb3vhm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mra.com.tastyfoodcafe",
+            "certificate_hash": "48408003ce13c9d237a91853a2bffdd044cd260f"
+          }
+        },
+        {
+          "client_id": "416489547534-qldmascm92a46417hfgvj8rd4inqfj2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0X4GudDXxUBGnTgi-s-VlVBLpEPJMb4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416489547534-qldmascm92a46417hfgvj8rd4inqfj2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

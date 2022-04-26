@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creamyoranger"
+    tools:context="mra.com.tastyfoodcafe.LoginPageActivity"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/creamyoranger"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/logo2"
+            app:tint="@color/darkcream" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:text="Login To Tasty Food Cafe"
+            android:textColor="@color/darkoranger"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgloginpage"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Enter Valid Mobile Number"
+            tools:ignore="MissingClass" />
+
+
+        <EditText
+            android:id="@+id/Rec_otp"
+            android:inputType="number"
+            android:visibility="gone"
+            android:hint="Verification Code"
+            android:textColorHint="@color/gray"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/gray"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/send_otp1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttondrawable"
+            android:layout_marginTop="65dp"
+            android:text="Verify"
+            android:textColor="@color/creamyoranger"
+            android:fontFamily="casual"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/send_otp1"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Two Step Verification!"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/lightgray"
+            />
+
+        <TextView
+            android:id="@+id/feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Feedback!"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="About!"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
