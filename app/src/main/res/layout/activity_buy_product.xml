@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creamyoranger"
+    tools:context="mra.com.tastyfoodcafe.BuyProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        android:background="@color/creamyoranger"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Select Mode Of Transication"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            />
+
+        <Button
+            android:id="@+id/cod"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bgpaybtnpage"
+            android:text="COD"
+            android:textColor="@color/lightcreamyoranger" />
+
+        <Button
+            android:id="@+id/dumycard"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bgpaybtnpage"
+            android:text="Card "
+            android:textColor="@color/lightcreamyoranger" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rel1"
+        android:background="@color/creamyoranger"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/CODform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/formdrawable"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/v1"
+        >
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Fill The Details"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"/>
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="Enter Name"
+            tools:ignore="MissingClass" />
+
+        <EditText
+            android:id="@+id/mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            tools:ignore="MissingClass" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobilenumber"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="Addredd 1ine 1"
+             />
+
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Addredd 1ine 2"
+            />
+
+
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/address1"
+            android:layout_below="@+id/address1"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:text="1"
+            android:layout_alignLeft="@+id/address1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Place Order"
+            android:fontFamily="casual"
+            android:id="@+id/button2"
+            android:background="@drawable/buttondrawable"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:background="@drawable/formdrawable">
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

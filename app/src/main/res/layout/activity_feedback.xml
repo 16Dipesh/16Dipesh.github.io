@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mra.com.tastyfoodcafe.FeedbackActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_OTP1"
+        >
+
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:background="@color/creamyoranger"
+            />
+        <ImageView
+            android:id="@+id/src"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/logo2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src"
+            android:text="Feed Back!"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/j"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Please Share your Experience! "
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/view"
+            android:id="@+id/linearLayout">
+
+
+            <EditText
+                android:id="@+id/FeedName"
+                android:layout_below="@+id/view"
+                android:layout_width="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:hint="Name"
+                android:padding="10dp"
+                android:inputType="text"
+                android:pointerIcon="crosshair"
+                tools:ignore="MissingClass" />
+
+
+            <EditText
+                android:id="@+id/FeedContact"
+                android:layout_below="@id/FeedName"
+                android:layout_width="280dp"
+                android:textColor="@color/gray"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/lightgray"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:inputType="number"
+                />
+
+
+
+            <EditText
+                android:id="@+id/Feed"
+                android:inputType="textMultiLine"
+                android:layout_below="@id/FeedContact"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/lightgray"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Comments"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/FeedSend"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="Send "
+            android:textStyle="bold"
+            android:background="@color/creamyoranger"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

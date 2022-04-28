@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TastyFoodCafe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="code">Tasty Food Cafe Provide Best Food Quality and Coutomize your order as per requiremnet thankyou :) </string>
+    <string name="total">Total - 0.RS</string>
+</resources>

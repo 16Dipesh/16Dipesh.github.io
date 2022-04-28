@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="payment_amount" type="id" />
+    <item name="btn_pay" type="id" />
+    <item name="Logout11" type="id" />
+</resources>

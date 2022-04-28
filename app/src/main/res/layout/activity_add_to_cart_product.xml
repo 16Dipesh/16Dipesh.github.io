@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightcreamyoranger"
+    tools:context="mra.com.tastyfoodcafe.AddToCartProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay_addprodct"
+        android:background="@color/darkcream"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/ic_delete_black_24dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="Added Products"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:textColor="@color/lightcreamyoranger"/>
+
+
+
+
+
+
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rellay_addprodct"
+        />
+
+    <TextView
+        android:id="@+id/nop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Product Added To Cart..."
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/buycart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttondrawable"
+        android:text="Buy Now"
+        android:textSize="20dp"
+        android:textColor="@color/lightcreamyoranger"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
